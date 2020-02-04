@@ -44,6 +44,10 @@ function burgerClicked(){
         rightArrowToBurger.play();
         // call that background animation funciton
         animateNavbackground();
+        // gsap call to scroll content
+
+        gsap.to(window, {duration: 1, scrollTo:{y:contentSections[$('nav ul li').index(this)], offsetY:60}});
+
         // set the var back to false, since the naviagion is now closed
         navigationIsOpen = false;
     }

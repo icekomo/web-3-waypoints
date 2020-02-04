@@ -3,6 +3,7 @@
     grid-template-columns: 20px auto 20px;
     grid-template-areas: ". section-2 .";
     padding-top: 100px;
+    border: 1px solid red;
     >div{
         grid-area: section-2;
 
