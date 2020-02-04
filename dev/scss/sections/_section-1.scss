@@ -1,0 +1,32 @@
+/* =============
+    Content
+============= */
+
+#section-1{
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-areas: ". content .";
+    padding-top: 100px;
+    height: 80vh;
+
+    @include md{
+        grid-template-columns: auto 50% auto;
+        height: inherit;
+    }
+
+    @include xl{
+        grid-template-columns: auto 600px auto;
+    }
+
+    >div{
+        grid-area: content;
+        text-align: center;
+        h1{
+            margin-bottom: 30px;
+        }
+        p{
+            text-align: justify;
+            line-height: rem-calc(25);
+        }
+    }
+}

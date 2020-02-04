@@ -1,0 +1,28 @@
+/* =============
+    Header
+============= */
+header{
+    position: fixed;
+    width: 100%;
+    background-color: $white;
+    display: grid;
+    grid-template-columns: 24px auto 24px;
+    grid-template-areas: ". header .";
+    z-index: 100;
+
+    >div{
+        grid-area: header;
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 0;
+
+        #burger-container{
+            height: 20px;
+            cursor: pointer;
+
+            .lines{
+                stroke: $blue;
+            }
+        }
+    }
+}

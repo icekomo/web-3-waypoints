@@ -1,0 +1,67 @@
+#section-2{
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-areas: ". section-2 .";
+    padding-top: 100px;
+    >div{
+        grid-area: section-2;
+
+        @include md{
+            display: grid;
+            grid-template-columns: 45% auto;
+            grid-gap: 20px;
+            grid-template-areas:
+            "sec-2-hero sec-2-text";
+        }
+
+        h1{
+            margin-bottom: 30px;
+
+            @include md{
+                display: none;
+            }
+        }
+
+        aside{
+            background-image: url("../img/section-2/section-2.jpg");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+
+            @include md{
+                grid-area: sec-2-hero;
+                height: 50vh;
+            }
+        }
+
+        article{
+            padding: 50px 0;
+
+            @include md{
+                grid-area: sec-2-text;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            >div{
+
+                h1{
+                    display: none;
+
+                    @include md{
+                        display: block;
+                    }
+                }
+
+                p{
+                    text-align: justify;
+                    line-height: rem-calc(25);
+                }
+            }
+
+
+        }
+    }
+}
