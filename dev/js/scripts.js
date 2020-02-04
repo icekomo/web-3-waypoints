@@ -5,7 +5,7 @@
 // @codekit-append 'burger/burger-click.js'
 // @codekit-append 'burger/burger-mouseEnter.js'
 // @codekit-append 'burger/burger-mouseLeave.js'
-
+// @codekit-append 'waypoints.js'
 
 $( document ).ready(function() {
     console.log( "ready!" );

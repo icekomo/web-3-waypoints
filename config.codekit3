@@ -209,6 +209,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/js/waypoints.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/waypoints-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/navigation.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -1928,7 +1939,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "gsap,ScrollToPlugin",
+	"jsCheckerReservedNamesString": "gsap,ScrollToPlugin, Waypoint, notify",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
